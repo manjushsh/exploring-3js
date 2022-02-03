@@ -21,7 +21,14 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "*.d.ts"
   ],
-  "exclude": ["node_modules", "build", "dist", "src/**/*.js", "src/**/*.jsx"]
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "src/**/*.js",
+    "src/**/*.jsx"
+  ]
 }
