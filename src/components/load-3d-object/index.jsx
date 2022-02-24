@@ -1,15 +1,20 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
-import TableModel from "./table";
+import { Environment, OrbitControls } from "@react-three/drei";
+import FlowerModel from "./flowers";
+// import FreeCarModel from "./freecar";
+
+import "./index.css";
 
 const Scene = () => {
   return (
-    <div className="App">
+    <div className="common-render">
       <Canvas>
         <Suspense fallback={null}>
-          <TableModel />
-          <Environment preset="sunset" background />
+          {/* <FreeCarModel /> */}
+          <FlowerModel />
+          <OrbitControls />
+          <Environment preset="lobby" background />
         </Suspense>
       </Canvas>
     </div>
