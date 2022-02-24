@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-// import { Environment } from "@react-three/drei";
+import { Environment } from "@react-three/drei";
 import TableModel from "./table";
 
 const Scene = () => {
@@ -9,7 +9,7 @@ const Scene = () => {
       <Canvas>
         <Suspense fallback={null}>
           <TableModel />
-          {/* <Environment preset="sunset" background /> */}
+          <Environment preset="sunset" background />
         </Suspense>
       </Canvas>
     </div>
