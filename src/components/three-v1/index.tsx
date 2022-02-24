@@ -5,7 +5,7 @@ const Main3DSceneView = () => {
     const sceneParentNode = React.createRef() as React.RefObject<HTMLDivElement>;
     useEffect(() => CubeAnimation(sceneParentNode));
     return (
-        <div ref={sceneParentNode} id='3d-main-node'></div>
+        <div ref={sceneParentNode} className='3d-node'></div>
     );
 };
 
@@ -25,8 +25,8 @@ const CubeAnimation = (parentNodeRef: React.RefObject<HTMLDivElement>) => {
     camera.position.z = 5;
     const animate = function () {
         requestAnimationFrame(animate);
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
+        cube.rotation.x += 0.02;
+        cube.rotation.y += 0.02;
         renderer.render(scene, camera);
     };
     animate();
