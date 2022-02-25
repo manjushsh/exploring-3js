@@ -1,8 +1,9 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
-import FlowerModel from "./flowers";
+// import FlowerModel from "./flowers";
 // import FreeCarModel from "./freecar";
+import LightModel from './light';
 
 import "./index.css";
 
@@ -12,9 +13,9 @@ const Scene = () => {
       <Canvas>
         <Suspense fallback={null}>
           {/* <FreeCarModel /> */}
-          <FlowerModel />
+          <LightModel />
           <OrbitControls enableZoom={true} enablePan={true} />
-          <Environment preset="lobby" background />
+          <Environment preset="night" background />
         </Suspense>
       </Canvas>
     </div>
