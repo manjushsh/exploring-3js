@@ -13,7 +13,7 @@ const Scene = () => {
         <Suspense fallback={null}>
           {/* <FreeCarModel /> */}
           <FlowerModel />
-          <OrbitControls />
+          <OrbitControls enableZoom={true} enablePan={true} />
           <Environment preset="lobby" background />
         </Suspense>
       </Canvas>

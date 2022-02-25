@@ -5,7 +5,6 @@ import LoadMesh from "../load-3d-object";
 const App = () => {
   return (
     <>
-      <div>{"Hello World!"}</div>
       <LoadMesh />
       {/* <CubeSpinView /> */}
       {/* <ThreeDSceneView /> */}
