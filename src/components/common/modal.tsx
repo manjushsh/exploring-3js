@@ -4,7 +4,9 @@ type modalParamTypes = {
   modalFooter: JSX.Element;
 };
 
-const Modal = ({ modalTitle, ModalBody, modalFooter }: modalParamTypes) => {
+// import { Modal } from "react-bootstrap";
+
+const customModal = ({ modalTitle, ModalBody, modalFooter }: modalParamTypes) => {
   return (
     <>
       <div
@@ -38,4 +40,4 @@ const Modal = ({ modalTitle, ModalBody, modalFooter }: modalParamTypes) => {
   );
 };
 
-export default Modal;
+export default customModal;
