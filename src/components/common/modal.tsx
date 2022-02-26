@@ -1,41 +1,35 @@
+import { Modal } from "react-bootstrap";
+
 type modalParamTypes = {
   modalTitle: JSX.Element;
   ModalBody: Function;
   modalFooter: JSX.Element;
 };
 
-// import { Modal } from "react-bootstrap";
-
-const customModal = ({ modalTitle, ModalBody, modalFooter }: modalParamTypes) => {
+const customModal = ({
+  modalTitle,
+  ModalBody,
+  modalFooter,
+}: modalParamTypes) => {
   return (
     <>
-      <div
-        className={"modal fade"}
-        id={"staticBackdrop"}
-        data-bs-backdrop={"static"}
-        data-bs-keyboard={false}
-        tabIndex={-1}
-        aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
+      <Modal
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
       >
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="modal-header">
-              <span className="modal-title" id="staticBackdropLabel">
-                {modalTitle}
-              </span>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              />
-            </div>
-            <div className="modal-body">{<ModalBody />}</div>
-            <div className="modal-footer">{modalFooter}</div>
-          </div>
-        </div>
-      </div>
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            {modalTitle}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <ModalBody />>
+        </Modal.Body>
+        <Modal.Footer>
+          {modalFooter}
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };
