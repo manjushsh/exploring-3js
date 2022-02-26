@@ -24,7 +24,7 @@ const customModal = ({
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <ModalBody />>
+          <ModalBody />
         </Modal.Body>
         <Modal.Footer>
           {modalFooter}
