@@ -16,7 +16,18 @@ body nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--white);
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  background-color: var(--default-background-color);
+  color: var(--default-text-color);
+}
+
+.btn-close{
+  background-color: var(--inverted-background-color);
+  color: var(--inverted-text-color);
 }
 
 .logo {

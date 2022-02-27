@@ -9,7 +9,7 @@ const BootstrapCard = ({
       key={key}
       onClick={onClick}
       className="card"
-      style={{ width: "18rem" }}
+      style={{ width: "18rem", backgroundColor:'var(--default-background-color)' }}
     >
       {threeDModel}
       <div className="card-body">{textContent || <p>Hello There!</p>}</div>

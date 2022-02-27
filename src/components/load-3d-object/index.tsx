@@ -22,8 +22,8 @@ const Scene = () => {
           <span>Left click drag to rotate and right click drag to pan</span>
         }
         ModalBody={
-          canvasMapping[camvasIdInState as keyof typeof canvasMapping] ||
-          emptyDataFunction
+          canvasMapping[camvasIdInState as keyof typeof canvasMapping]
+            ?.component || emptyDataFunction
         }
         // modalFooter={<span>Controls here</span>}
         showModal={state?.showModal || false}
@@ -37,7 +37,8 @@ const Scene = () => {
             <BootstrapCard
               key={canvas}
               onClick={() => onCardClicked(canvas)}
-              threeDModel={<RenderCanvas />}
+              threeDModel={<RenderCanvas.component />}
+              textContent={<span>{RenderCanvas?.name}</span>}
             />
           );
         })}
