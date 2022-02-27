@@ -4,7 +4,7 @@ import "./App.css";
 const NavBar = () => {
   return (
     <>
-      <nav>
+      <nav className="navbar-nav">
         <ul className="navbar">
           <li>
             <span>

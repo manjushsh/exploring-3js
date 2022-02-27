@@ -25,7 +25,7 @@ body nav {
   color: var(--default-text-color);
 }
 
-.btn-close{
+.btn-close {
   background-color: var(--inverted-background-color);
   color: var(--inverted-text-color);
 }
@@ -39,10 +39,22 @@ body nav {
   font-size: var(--font-32);
 }
 
+.navbar-nav {
+  background-color: var(--default-background-color);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-bottom: 5px solid green;
+}
+
 .navbar {
   display: flex;
+  padding-bottom: 0;
 }
 
 ul {
   list-style-type: none;
+}
+
+.card {
+  border: 2px solid green;
 }

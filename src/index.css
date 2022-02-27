@@ -7,7 +7,7 @@
   --light-url-color: #1a0dab;
   --light-url-visited-color: #609;
 
-  --dark-background-color: #171717;
+  --dark-background-color: rgba(23, 23, 23, 1);
   --dark-text-color: #bdc1c6;
   --dark-url-color: #7fcfff;
   --dark-url-visited-color: #c58af9;

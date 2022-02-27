@@ -19,7 +19,9 @@ const Scene = () => {
       <Modal
         fullscreen
         modalTitle={
-          <span>Left click drag to rotate and right click drag to pan</span>
+          <span style={{ fontSize: "24px", fontWeight: 600 }}>
+            Left click drag to rotate and right click drag to pan
+          </span>
         }
         ModalBody={
           canvasMapping[camvasIdInState as keyof typeof canvasMapping]
