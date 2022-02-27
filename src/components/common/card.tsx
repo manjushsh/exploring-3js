@@ -1,4 +1,4 @@
-const BootstrapCard = ({ key, onClick, childComponent }: any) => {
+const BootstrapCard = ({ key, onClick, threeDModel, textContent }: any) => {
   return (
     <div
       key={key}
@@ -6,7 +6,7 @@ const BootstrapCard = ({ key, onClick, childComponent }: any) => {
       className="card"
       style={{ width: "18rem" }}
     >
-      {childComponent}
+      {threeDModel}
       <div className="card-body">
         <p className="card-text">
           Some quick example text to build on the card title and make up the

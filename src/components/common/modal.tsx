@@ -1,15 +1,17 @@
 import { Modal } from "react-bootstrap";
 
 type modalParamTypes = {
-  modalTitle: JSX.Element;
-  ModalBody: any;
-  modalFooter: JSX.Element;
+  modalClasses?: string[];
+  modalTitle?: JSX.Element;
+  ModalBody?: any;
+  modalFooter?: JSX.Element;
   showModal: boolean;
   handleClose: Function;
   fullscreen?: any | boolean | string;
 };
 
 const customModal = ({
+  modalClasses = ["modal"],
   modalTitle,
   ModalBody,
   modalFooter,
@@ -26,16 +28,25 @@ const customModal = ({
         centered
         show={showModal}
         onHide={() => handleClose()}
+        className={`${modalClasses}`}
       >
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            {modalTitle}
-          </Modal.Title>
+          {modalTitle ? (
+            <Modal.Title id="contained-modal-title-vcenter" as={"section"}>
+              {modalTitle}
+            </Modal.Title>
+          ) : (
+            ""
+          )}
         </Modal.Header>
-        <Modal.Body>
-          <ModalBody />
-        </Modal.Body>
-        <Modal.Footer>{modalFooter}</Modal.Footer>
+        {ModalBody ? (
+          <Modal.Body>
+            <ModalBody />
+          </Modal.Body>
+        ) : (
+          ""
+        )}
+        {modalFooter ? <Modal.Footer>{modalFooter}</Modal.Footer> : ""}
       </Modal>
     </>
   );

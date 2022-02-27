@@ -9,7 +9,7 @@ const Scene = () => {
   const [state, setState] = useState({ canvasId: "", showModal: false });
 
   const emptyDataFunction = () => <></>;
-  const emptyFunction = () => {};
+  // const emptyFunction = () => {};
   const handleClose = () => setState({ ...state, showModal: false });
   const onCardClicked = (canvasId: string) =>
     setState({ ...state, showModal: canvasId ? true : false, canvasId });
@@ -25,7 +25,7 @@ const Scene = () => {
           canvasMapping[camvasIdInState as keyof typeof canvasMapping] ||
           emptyDataFunction
         }
-        modalFooter={<span>Controls here</span>}
+        // modalFooter={<span>Controls here</span>}
         showModal={state?.showModal || false}
         handleClose={handleClose}
       />
@@ -37,7 +37,7 @@ const Scene = () => {
             <BootstrapCard
               key={canvas}
               onClick={() => onCardClicked(canvas)}
-              childComponent={<RenderCanvas />}
+              threeDModel={<RenderCanvas />}
             />
           );
         })}
