@@ -3,10 +3,10 @@ import { Modal } from "react-bootstrap";
 type modalParamTypes = {
   modalClasses?: string[];
   modalTitle?: JSX.Element;
-  ModalBody?: any;
+  ModalBody?: JSX.Element | string | any;
   modalFooter?: JSX.Element;
   showModal: boolean;
-  handleClose: Function;
+  handleClose: any;
   fullscreen?: any | boolean | string;
 };
 

@@ -1,4 +1,9 @@
-const BootstrapCard = ({ key, onClick, threeDModel, textContent }: any) => {
+const BootstrapCard = ({
+  key,
+  onClick,
+  threeDModel,
+  textContent,
+}: cardPropType) => {
   return (
     <div
       key={key}
@@ -7,14 +12,17 @@ const BootstrapCard = ({ key, onClick, threeDModel, textContent }: any) => {
       style={{ width: "18rem" }}
     >
       {threeDModel}
-      <div className="card-body">
-        <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-      </div>
+      <div className="card-body">{textContent || <p>Hello There!</p>}</div>
     </div>
   );
 };
 
 export default BootstrapCard;
+
+// Type Definations
+type cardPropType = {
+  key: string;
+  onClick: React.MouseEventHandler<HTMLDivElement>;
+  threeDModel?: JSX.Element;
+  textContent?: JSX.Element | string;
+};
