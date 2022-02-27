@@ -1,15 +1,13 @@
 import FlowerCanvas from "./flowers";
-import FreeCarCanvas from "./freecar";
 import LightCanvas from "./light";
 import HeadSetCanvas from "./headphone";
-import TVCanvas from "./LED";
+import MouseCanvas from "./mouse";
 
 const canvasMapping = {
   LightCanvas,
   FlowerCanvas,
-  FreeCarCanvas,
   HeadSetCanvas,
-  TVCanvas,
+  MouseCanvas,
 };
 
 export default canvasMapping;
