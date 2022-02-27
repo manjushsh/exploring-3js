@@ -18,7 +18,7 @@ const canvasMapping = {
     component: HeadSetCanvas,
   },
   MouseCanvas: {
-    name: "Mouse",
+    name: "Mouse Logitech G603",
     component: MouseCanvas,
   },
   TableCanvas: {
