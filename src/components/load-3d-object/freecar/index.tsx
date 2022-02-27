@@ -42,7 +42,7 @@ export default FreeCarCanvas;
 
 const Model = (props: JSX.IntrinsicElements["group"]) => {
   const group = useRef<THREE.Group>();
-  const { nodes, materials } = useGLTF(FREECAR) as GLTFResult;
+  const { nodes } = useGLTF(FREECAR) as GLTFResult;
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
