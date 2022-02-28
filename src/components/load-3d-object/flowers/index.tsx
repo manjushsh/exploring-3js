@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { useGLTF, Environment, OrbitControls } from "@react-three/drei";
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 import { Canvas } from "@react-three/fiber";
-import FLOWERS from "./flowers.gltf";
+const FLOWERS = `${process.env.REACT_APP_S3_BASE_URL}/flowers.gltf`;
 
 type GLTFResult = GLTF & {
   nodes: {

@@ -7,7 +7,7 @@ import { Suspense, useRef } from "react";
 import { Environment, OrbitControls, useGLTF } from "@react-three/drei";
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 import { Canvas } from "react-three-fiber";
-import HeadSet from './headset0001.gltf';
+const HeadSet = `${process.env.REACT_APP_S3_BASE_URL}/headset0001.gltf`;
 
 type GLTFResult = GLTF & {
   nodes: {
