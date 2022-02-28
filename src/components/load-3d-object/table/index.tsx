@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { Canvas } from "react-three-fiber";
 import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
-import TableGLB from "./table.glb";
+const TableGLB = `${process.env.REACT_APP_S3_BASE_URL}/table.glb`; //"./table.glb";
 
 type GLTFResult = GLTF & {
   nodes: {
