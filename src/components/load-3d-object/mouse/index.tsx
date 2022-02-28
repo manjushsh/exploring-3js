@@ -7,7 +7,7 @@ import { useRef, Suspense } from "react";
 import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 import { Canvas } from "@react-three/fiber";
-import MOUSE from "./mouse.gltf";
+const MOUSE = `${process.env.REACT_APP_S3_BASE_URL}/mouse.gltf`;
 
 type GLTFResult = GLTF & {
   nodes: {
