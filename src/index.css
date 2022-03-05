@@ -57,3 +57,74 @@ code {
   display: flex;
   align-items: center;
 }
+
+
+/* Google */
+
+:root {
+	--color-core-primary: #3740ff;
+	--color-core-primary-glare: #9da2ff;
+	--color-core-primary-bright: #f8faff;
+	--color-core-primary-dim: #2c333f;
+	--color-core-secondary: #e51661;
+	--color-core-secondary-shade: #9c166b;
+	--color-core-secondary-glare: #ee518a;
+	--color-core-secondary-bright: #fef5fa;
+	--color-core-secondary-dim: #3e2d39;
+	--color-core-tertiary: #6001ff;
+	--color-core-tertiary-glare: #d7aefb;
+	--color-core-tertiary-bright: #faf6fe;
+	--color-core-tertiary-dim: #352e3f;
+	--color-core-quaternary: #007b83;
+	--color-core-quaternary-glare: #78d9ec;
+	--color-core-quaternary-bright: #f4fcfe;
+	--color-core-quaternary-dim: #26373d;
+	--color-core-brand: #3fc4ff;
+	--color-state-good: #0d652d;
+	--color-state-good-bright: #e9f6ed;
+	--color-state-good-dim: #283532;
+	--color-state-good-glare: #e2faed;
+	--color-state-info: #174ea6;
+	--color-state-info-glare: #3074e2;
+	--color-state-info-bright: #deeafd;
+	--color-state-info-dim: #2c333f;
+	--color-state-warn: #c34900;
+	--color-state-warn-bright: #fff5e3;
+	--color-state-warn-dim: #3b372b;
+	--color-state-warn-glare: #fffcf2;
+	--color-state-bad: #a50e0e;
+	--color-state-bad-bright: #fce8e8;
+	--color-state-bad-dim: #3b2d30;
+	--color-state-bad-glare: #ffe9e8;
+	--color-shades-dark: #191919;
+	--color-shades-dim: #202124;
+	--color-shades-charcoal: #303136;
+	--color-shades-gray: #585b63;
+	--color-shades-gray-bright: #a5a7af;
+	--color-shades-gray-glare: #d2d3d7;
+	--color-shades-light: #f8f9fa;
+	--color-shades-light-bright: #ffffff;
+	--color-backgrounds-checkbox: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='%23191919' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 2V16H2V2H16ZM16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0Z' /%3E%3C/svg%3E");
+	--color-backgrounds-checkbox-checked: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='%233740ff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0ZM16 16H2V2H16V16ZM15 6L13.6 4.6L7 11.2L4.4 8.6L3 10L7 14L15 6Z' /%3E%3C/svg%3E");
+	--color-backgrounds-checkbox-dark: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='%23f6f6f7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 2V16H2V2H16ZM16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0Z' /%3E%3C/svg%3E");
+	--color-backgrounds-checkbox-dark-checked: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='%239da2ff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0ZM16 16H2V2H16V16ZM15 6L13.6 4.6L7 11.2L4.4 8.6L3 10L7 14L15 6Z' /%3E%3C/svg%3E");
+	--color-backgrounds-radio: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='%23191919' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z' /%3E%3C/svg%3E");
+	--color-backgrounds-radio-checked: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='%233740ff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7Z' /%3E%3C/svg%3E");
+	--color-backgrounds-radio-dark: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='%23f6f6f7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z' /%3E%3C/svg%3E");
+	--color-backgrounds-radio-dark-checked: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='%239da2ff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7Z' /%3E%3C/svg%3E");
+	--color-code-primary: #183691;
+	--color-code-primary-glare: #007aa2;
+	--color-code-primary-bright: #4dd3ff;
+	--color-code-secondary: #a71d5d;
+	--color-code-secondary-glare: #d22575;
+	--color-code-secondary-bright: #e776aa;
+	--color-code-tertiary: #9f1c59;
+	--color-code-tertiary-glare: #ca2471;
+	--color-code-tertiary-bright: #e3609d;
+	--color-code-quaternary: #385d34;
+	--color-code-quaternary-glare: #52894c;
+	--color-code-quaternary-bright: #9cc598;
+	--color-highlights-magenta: #ff00b8;
+	--color-highlights-green: #128500;
+	--color-highlights-purple: #7600ae;
+}
